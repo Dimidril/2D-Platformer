@@ -41,7 +41,6 @@ public class Player : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-
         float speed = _isGrounded ? _speed : _speedInAir;
         transform.Translate(transform.right * direction * speed * Time.deltaTime);
         _animationsController.SetRuning(true);

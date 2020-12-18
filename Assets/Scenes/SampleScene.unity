@@ -1688,7 +1688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420745862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.573, y: 6.42, z: 0}
+  m_LocalPosition: {x: -4.573, y: 6.83, z: 0}
   m_LocalScale: {x: 0.77264935, y: 0.77264935, z: 0.77264935}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1767,7 +1767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002558664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.4, z: 0}
+  m_LocalPosition: {x: -0.15, y: 0.408, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1956511899}
@@ -1788,7 +1788,7 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
+  m_SurfaceArc: 76.93
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
