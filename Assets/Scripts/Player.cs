@@ -60,9 +60,4 @@ public class Player : MonoBehaviour
     {
         _animationsController.SetRuning(false);
     }
-
-    private bool IsGrounded()
-    {
-        return true;
-    }
 }
