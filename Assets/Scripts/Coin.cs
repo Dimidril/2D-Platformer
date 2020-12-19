@@ -7,7 +7,7 @@ public class Coin : MonoBehaviour
     {
         if(collision.TryGetComponent(out Wallet wallet))
         {
-            wallet.AddCoin();
+            wallet?.AddCoin();
             Destroy(gameObject);
         }
     }
