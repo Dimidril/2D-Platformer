@@ -5,10 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] private float _startSpeed;
+    [SerializeField] private float _maxSpeed;
     [SerializeField] private float _speedInAir;
+    [SerializeField] private float _accelerationToMax;
     [SerializeField] private float _jumpForce;
 
+    //private float _speed;
+    private float _moveTime;
     private Rigidbody2D _rigidbody2D;
     private AnimationsController _animationsController;
     private bool _isGrounded;
@@ -41,9 +45,10 @@ public class Player : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-        float speed = _isGrounded ? _speed : _speedInAir;
+        _moveTime += Time.deltaTime;
+        float speed = _isGrounded ? Mathf.Lerp(_startSpeed, _maxSpeed, _moveTime/_accelerationToMax) : _speedInAir;
         transform.Translate(transform.right * direction * speed * Time.deltaTime);
-        _animationsController.SetRuning(true);
+        _animationsController.SetSpeed(speed/_maxSpeed);
     }
 
     public void Jump()
@@ -57,6 +62,7 @@ public class Player : MonoBehaviour
 
     public void Idle()
     {
-        _animationsController.SetRuning(false);
+        _animationsController.SetSpeed(0);
+        _moveTime = 0;
     }
 }

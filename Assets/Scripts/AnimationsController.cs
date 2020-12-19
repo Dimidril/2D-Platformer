@@ -12,9 +12,9 @@ public class AnimationsController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void SetRuning(bool isRuning)
+    public void SetSpeed(float speed)
     {
-        _animator.SetBool("IsRuning", isRuning);
+        _animator.SetFloat("Speed", speed);
     }
 
     public void SetGrounded(bool isGrounded)
