@@ -12,13 +12,13 @@ public class Player : MonoBehaviour
     private float _speed;
     private float _moveTime;
     private Rigidbody2D _rigidbody2D;
-    private AnimationsController _animationsController;
+    private AnimationSeter _animationsController;
     private bool _isGrounded;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _animationsController = GetComponent<AnimationsController>();
+        _animationsController = GetComponent<AnimationSeter>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

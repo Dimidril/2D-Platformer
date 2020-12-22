@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Player))]
-public class PlayerController : MonoBehaviour
+public class PlayerKeyboardInput : MonoBehaviour
 {
     private Player _player;
 

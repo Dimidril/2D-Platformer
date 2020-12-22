@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class AnimationsController : MonoBehaviour
+public class AnimationSeter : MonoBehaviour
 {
     private Animator _animator;
 

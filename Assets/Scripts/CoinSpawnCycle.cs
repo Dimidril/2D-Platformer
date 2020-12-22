@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class CoinSpawnController : MonoBehaviour
+public class CoinSpawnCycle: MonoBehaviour
 {
     [SerializeField] private float _duration;
 
